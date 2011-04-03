@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'PhotoFXTests' target in the 'PhotoFXTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif
