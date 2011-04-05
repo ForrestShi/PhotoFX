@@ -7,6 +7,7 @@
 //
 
 #import "PhotoFXAppDelegate.h"
+#import "PhotoProcessViewController.h"
 
 @implementation PhotoFXAppDelegate
 
@@ -16,7 +17,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    PhotoProcessViewController *viewController = [[PhotoProcessViewController alloc] init];
+    [self.window addSubview:viewController.view];
     [self.window makeKeyAndVisible];
+    return YES;
     return YES;
 }
 
