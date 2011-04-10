@@ -24,6 +24,13 @@
 		180A677713483F1B00225E7E /* PhotoFXTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 180A677613483F1B00225E7E /* PhotoFXTests.h */; };
 		180A677913483F1B00225E7E /* PhotoFXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A677813483F1B00225E7E /* PhotoFXTests.m */; };
 		180A678313483F3100225E7E /* README in Resources */ = {isa = PBXBuildFile; fileRef = 180A678213483F3100225E7E /* README */; };
+		186E6690135196C4000E03D3 /* SelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E668E135196C4000E03D3 /* SelectPhotoViewController.m */; };
+		186E6691135196C4000E03D3 /* SelectPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186E668F135196C4000E03D3 /* SelectPhotoViewController.xib */; };
+		18A43CB5135178E500495B4B /* TestIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A43CB3135178E100495B4B /* TestIBView.m */; };
+		18A43CB6135178E500495B4B /* TestIBView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A43CB4135178E300495B4B /* TestIBView.xib */; };
+		18A43CB913517C3E00495B4B /* IM_TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A43CB813517C3D00495B4B /* IM_TestViewController.m */; };
+		18A43CBD1351962200495B4B /* WelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A43CBB1351960E00495B4B /* WelcomeViewController.m */; };
+		18A43CBE1351962200495B4B /* WelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18A43CBC1351961600495B4B /* WelcomeViewController.xib */; };
 		18AC49B9134AEDB100953588 /* coder.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4925134AEDB100953588 /* coder.xml */; };
 		18AC49BA134AEDB100953588 /* coder.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4925134AEDB100953588 /* coder.xml */; };
 		18AC49BB134AEDB100953588 /* colors.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4926134AEDB100953588 /* colors.xml */; };
@@ -157,7 +164,6 @@
 		18AC4B4F134AFD0C00953588 /* yellowslide.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B4C134AFD0C00953588 /* yellowslide.png */; };
 		18AC4B50134AFD0C00953588 /* slider_ball.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B4D134AFD0C00953588 /* slider_ball.png */; };
 		18AC4B51134AFD0C00953588 /* orangeslide.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B4E134AFD0C00953588 /* orangeslide.png */; };
-		18AC4B73134AFD6D00953588 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B53134AFD6D00953588 /* background.png */; };
 		18AC4B74134AFD6D00953588 /* frame2.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B54134AFD6D00953588 /* frame2.png */; };
 		18AC4B75134AFD6D00953588 /* frame1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B55134AFD6D00953588 /* frame1.png */; };
 		18AC4B76134AFD6D00953588 /* icon_share.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B56134AFD6D00953588 /* icon_share.png */; };
@@ -177,7 +183,6 @@
 		18AC4B84134AFD6D00953588 /* sketch.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B64134AFD6D00953588 /* sketch.png */; };
 		18AC4B85134AFD6D00953588 /* shade.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B65134AFD6D00953588 /* shade.png */; };
 		18AC4B86134AFD6D00953588 /* sepia.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B66134AFD6D00953588 /* sepia.png */; };
-		18AC4B87134AFD6D00953588 /* PE.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B67134AFD6D00953588 /* PE.png */; };
 		18AC4B88134AFD6D00953588 /* oilpaint.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B68134AFD6D00953588 /* oilpaint.png */; };
 		18AC4B89134AFD6D00953588 /* negate.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B69134AFD6D00953588 /* negate.png */; };
 		18AC4B8A134AFD6D00953588 /* implode.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B6A134AFD6D00953588 /* implode.png */; };
@@ -186,17 +191,28 @@
 		18AC4B8D134AFD6D00953588 /* charcoal.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B6D134AFD6D00953588 /* charcoal.png */; };
 		18AC4B8E134AFD6D00953588 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B6E134AFD6D00953588 /* cat.png */; };
 		18AC4B8F134AFD6D00953588 /* blur.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B6F134AFD6D00953588 /* blur.png */; };
-		18AC4B90134AFD6D00953588 /* background1.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B70134AFD6D00953588 /* background1.png */; };
 		18AC4B91134AFD6D00953588 /* jobs.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B71134AFD6D00953588 /* jobs.png */; };
 		18AC4B93134AFD8000953588 /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4B92134AFD8000953588 /* Tink.aiff */; };
 		18AC4BAE134B022500953588 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BAD134B022500953588 /* Entitlements.plist */; };
-		18AC4BB5134B04EE00953588 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BAF134B04DC00953588 /* Default.png */; };
-		18AC4BB6134B04EE00953588 /* Icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BB0134B04DD00953588 /* Icon114.png */; };
-		18AC4BB7134B04EE00953588 /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BB1134B04DE00953588 /* Icon72.png */; };
-		18AC4BB8134B04EE00953588 /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BB2134B04E100953588 /* Icon57.png */; };
-		18AC4BB9134B04EE00953588 /* Icon48.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BB3134B04E400953588 /* Icon48.png */; };
-		18AC4BBA134B04EE00953588 /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BB4134B04E900953588 /* Icon512.png */; };
-		18AC4BC2134B063300953588 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BC1134B063100953588 /* Icon.png */; };
+		18AC4BCE134B4BED00953588 /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BCD134B4BED00953588 /* background.png */; };
+		18AC4BD0134B53A200953588 /* wood.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BCF134B53A200953588 /* wood.png */; };
+		18AC4BDE134B559F00953588 /* Icon48.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BD9134B559F00953588 /* Icon48.png */; };
+		18AC4BDF134B559F00953588 /* Icon57.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BDA134B559F00953588 /* Icon57.png */; };
+		18AC4BE0134B559F00953588 /* Icon72.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BDB134B559F00953588 /* Icon72.png */; };
+		18AC4BE1134B559F00953588 /* Icon114.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BDC134B559F00953588 /* Icon114.png */; };
+		18AC4BE2134B559F00953588 /* Icon512.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BDD134B559F00953588 /* Icon512.png */; };
+		18AC4BE5134B55A900953588 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BE4134B55A900953588 /* Default.png */; };
+		18AC4BE9134B57C400953588 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18AC4BE8134B57C400953588 /* Icon.png */; };
+		18D36323135050DE0092102F /* LauncherViewTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18D36322135050DE0092102F /* LauncherViewTestController.m */; };
+		3201088596B4756681693705 /* libThree20UICommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3201088596B4756681693704 /* libThree20UICommon.a */; };
+		320A2827FEC940B25BC42C65 /* libThree20Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A2827FEC940B25BC42C64 /* libThree20Core.a */; };
+		320A5A189C235877202780D5 /* libThree20Network.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A5A189C235877202780D4 /* libThree20Network.a */; };
+		320A737074758E53BA54BE95 /* libThree20UINavigator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320A737074758E53BA54BE94 /* libThree20UINavigator.a */; };
+		320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 320AF8492C47A4D819F7C450 /* QuartzCore.framework */; };
+		320B6C86F11D9990244A9731 /* Three20.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 320B6C86F11D9990244A9730 /* Three20.bundle */; };
+		320CC833B8AF0ACFD35E6225 /* libThree20Style.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320CC833B8AF0ACFD35E6224 /* libThree20Style.a */; };
+		320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320D7DCCE32703ACAB9A45E4 /* libThree20.a */; };
+		320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 320F2C48872C2E2C4DF86204 /* libThree20UI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -207,10 +223,157 @@
 			remoteGlobalIDString = 180A673F13483F1A00225E7E;
 			remoteInfo = PhotoFX;
 		};
+		18D36325135050DF0092102F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = Three20UnitTests;
+		};
+		18D36328135050DF0092102F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A2827FEC940B25BC42C60 /* Three20Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = Three20CoreUnitTests;
+		};
+		18D3632B135050DF0092102F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A5A189C235877202780D0 /* Three20Network.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = Three20NetworkUnitTests;
+		};
+		18D3632E135050DF0092102F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = Three20StyleUnitTests;
+		};
+		18D36331135050DF0092102F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = Three20UIUnitTests;
+		};
+		18D36334135050DF0092102F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3201088596B4756681693700 /* Three20UICommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = Three20UICommonUnitTests;
+		};
+		18D36337135050DF0092102F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EB9E6C6210B6A8F800DE563C;
+			remoteInfo = Three20UINavigatorUnitTests;
+		};
+		3201088596B4756681693702 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3201088596B4756681693700 /* Three20UICommon.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20UICommon;
+		};
+		3201088596B4756681693706 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3201088596B4756681693700 /* Three20UICommon.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20UICommon;
+		};
+		320A2827FEC940B25BC42C62 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A2827FEC940B25BC42C60 /* Three20Core.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20Core;
+		};
+		320A2827FEC940B25BC42C66 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A2827FEC940B25BC42C60 /* Three20Core.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20Core;
+		};
+		320A5A189C235877202780D2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A5A189C235877202780D0 /* Three20Network.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20Network;
+		};
+		320A5A189C235877202780D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A5A189C235877202780D0 /* Three20Network.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20Network;
+		};
+		320A737074758E53BA54BE92 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20UINavigator;
+		};
+		320A737074758E53BA54BE96 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20UINavigator;
+		};
+		320CC833B8AF0ACFD35E6222 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20Style;
+		};
+		320CC833B8AF0ACFD35E6226 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20Style;
+		};
+		320D7DCCE32703ACAB9A45E2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20;
+		};
+		320D7DCCE32703ACAB9A45E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20;
+		};
+		320F2C48872C2E2C4DF86202 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BEF31F390F352DF5000DE5D2;
+			remoteInfo = Three20UI;
+		};
+		320F2C48872C2E2C4DF86206 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BEF31F3A0F352DF5000DE5D2;
+			remoteInfo = Three20UI;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		180A674013483F1A00225E7E /* pencilme.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pencilme.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		180A674013483F1A00225E7E /* advancedphotoeffects.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = advancedphotoeffects.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		180A674413483F1A00225E7E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		180A674613483F1A00225E7E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		180A674813483F1A00225E7E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -233,6 +396,17 @@
 		180A677613483F1B00225E7E /* PhotoFXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoFXTests.h; sourceTree = "<group>"; };
 		180A677813483F1B00225E7E /* PhotoFXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoFXTests.m; sourceTree = "<group>"; };
 		180A678213483F3100225E7E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		186E668D135196C4000E03D3 /* SelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoViewController.h; sourceTree = "<group>"; };
+		186E668E135196C4000E03D3 /* SelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewController.m; sourceTree = "<group>"; };
+		186E668F135196C4000E03D3 /* SelectPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPhotoViewController.xib; sourceTree = "<group>"; };
+		18A43CB2135178E000495B4B /* TestIBView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestIBView.h; sourceTree = "<group>"; };
+		18A43CB3135178E100495B4B /* TestIBView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestIBView.m; sourceTree = "<group>"; };
+		18A43CB4135178E300495B4B /* TestIBView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestIBView.xib; sourceTree = "<group>"; };
+		18A43CB713517C3C00495B4B /* IM_TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IM_TestViewController.h; sourceTree = "<group>"; };
+		18A43CB813517C3D00495B4B /* IM_TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IM_TestViewController.m; sourceTree = "<group>"; };
+		18A43CBA1351960800495B4B /* WelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomeViewController.h; sourceTree = "<group>"; };
+		18A43CBB1351960E00495B4B /* WelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomeViewController.m; sourceTree = "<group>"; };
+		18A43CBC1351961600495B4B /* WelcomeViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WelcomeViewController.xib; sourceTree = "<group>"; };
 		18AC4925134AEDB100953588 /* coder.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = coder.xml; sourceTree = "<group>"; };
 		18AC4926134AEDB100953588 /* colors.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = colors.xml; sourceTree = "<group>"; };
 		18AC4927134AEDB100953588 /* configure.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = configure.xml; sourceTree = "<group>"; };
@@ -542,7 +716,6 @@
 		18AC4B4C134AFD0C00953588 /* yellowslide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = yellowslide.png; sourceTree = "<group>"; };
 		18AC4B4D134AFD0C00953588 /* slider_ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = slider_ball.png; sourceTree = "<group>"; };
 		18AC4B4E134AFD0C00953588 /* orangeslide.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orangeslide.png; sourceTree = "<group>"; };
-		18AC4B53134AFD6D00953588 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		18AC4B54134AFD6D00953588 /* frame2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame2.png; sourceTree = "<group>"; };
 		18AC4B55134AFD6D00953588 /* frame1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = frame1.png; sourceTree = "<group>"; };
 		18AC4B56134AFD6D00953588 /* icon_share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_share.png; sourceTree = "<group>"; };
@@ -562,7 +735,6 @@
 		18AC4B64134AFD6D00953588 /* sketch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sketch.png; sourceTree = "<group>"; };
 		18AC4B65134AFD6D00953588 /* shade.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shade.png; sourceTree = "<group>"; };
 		18AC4B66134AFD6D00953588 /* sepia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sepia.png; sourceTree = "<group>"; };
-		18AC4B67134AFD6D00953588 /* PE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PE.png; sourceTree = "<group>"; };
 		18AC4B68134AFD6D00953588 /* oilpaint.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oilpaint.png; sourceTree = "<group>"; };
 		18AC4B69134AFD6D00953588 /* negate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = negate.png; sourceTree = "<group>"; };
 		18AC4B6A134AFD6D00953588 /* implode.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = implode.png; sourceTree = "<group>"; };
@@ -571,17 +743,29 @@
 		18AC4B6D134AFD6D00953588 /* charcoal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charcoal.png; sourceTree = "<group>"; };
 		18AC4B6E134AFD6D00953588 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
 		18AC4B6F134AFD6D00953588 /* blur.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blur.png; sourceTree = "<group>"; };
-		18AC4B70134AFD6D00953588 /* background1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background1.png; sourceTree = "<group>"; };
 		18AC4B71134AFD6D00953588 /* jobs.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jobs.png; sourceTree = "<group>"; };
 		18AC4B92134AFD8000953588 /* Tink.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Tink.aiff; sourceTree = "<group>"; };
 		18AC4BAD134B022500953588 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
-		18AC4BAF134B04DC00953588 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		18AC4BB0134B04DD00953588 /* Icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon114.png; sourceTree = "<group>"; };
-		18AC4BB1134B04DE00953588 /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon72.png; sourceTree = "<group>"; };
-		18AC4BB2134B04E100953588 /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon57.png; sourceTree = "<group>"; };
-		18AC4BB3134B04E400953588 /* Icon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon48.png; sourceTree = "<group>"; };
-		18AC4BB4134B04E900953588 /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon512.png; sourceTree = "<group>"; };
-		18AC4BC1134B063100953588 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		18AC4BCD134B4BED00953588 /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		18AC4BCF134B53A200953588 /* wood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wood.png; sourceTree = "<group>"; };
+		18AC4BD9134B559F00953588 /* Icon48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon48.png; sourceTree = "<group>"; };
+		18AC4BDA134B559F00953588 /* Icon57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon57.png; sourceTree = "<group>"; };
+		18AC4BDB134B559F00953588 /* Icon72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon72.png; sourceTree = "<group>"; };
+		18AC4BDC134B559F00953588 /* Icon114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon114.png; sourceTree = "<group>"; };
+		18AC4BDD134B559F00953588 /* Icon512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon512.png; sourceTree = "<group>"; };
+		18AC4BE4134B55A900953588 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		18AC4BE8134B57C400953588 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		18D36321135050DE0092102F /* LauncherViewTestController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LauncherViewTestController.h; sourceTree = "<group>"; };
+		18D36322135050DE0092102F /* LauncherViewTestController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LauncherViewTestController.m; sourceTree = "<group>"; };
+		3201088596B4756681693700 /* Three20UICommon.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UICommon.xcodeproj; path = ../../three20/src/Three20UICommon/Three20UICommon.xcodeproj; sourceTree = SOURCE_ROOT; };
+		320A2827FEC940B25BC42C60 /* Three20Core.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Core.xcodeproj; path = ../../three20/src/Three20Core/Three20Core.xcodeproj; sourceTree = SOURCE_ROOT; };
+		320A5A189C235877202780D0 /* Three20Network.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Network.xcodeproj; path = ../../three20/src/Three20Network/Three20Network.xcodeproj; sourceTree = SOURCE_ROOT; };
+		320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UINavigator.xcodeproj; path = ../../three20/src/Three20UINavigator/Three20UINavigator.xcodeproj; sourceTree = SOURCE_ROOT; };
+		320AF8492C47A4D819F7C450 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		320B6C86F11D9990244A9730 /* Three20.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Three20.bundle; path = ../../three20/src/Three20.bundle; sourceTree = SOURCE_ROOT; };
+		320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20Style.xcodeproj; path = ../../three20/src/Three20Style/Three20Style.xcodeproj; sourceTree = SOURCE_ROOT; };
+		320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20.xcodeproj; path = ../../three20/src/Three20/Three20.xcodeproj; sourceTree = SOURCE_ROOT; };
+		320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Three20UI.xcodeproj; path = ../../three20/src/Three20UI/Three20UI.xcodeproj; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -589,6 +773,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3201088596B4756681693705 /* libThree20UICommon.a in Frameworks */,
+				320D7DCCE32703ACAB9A45E5 /* libThree20.a in Frameworks */,
+				320A737074758E53BA54BE95 /* libThree20UINavigator.a in Frameworks */,
+				320A2827FEC940B25BC42C65 /* libThree20Core.a in Frameworks */,
+				320F2C48872C2E2C4DF86205 /* libThree20UI.a in Frameworks */,
+				320AF8492C47A4D819F7C451 /* QuartzCore.framework in Frameworks */,
+				320A5A189C235877202780D5 /* libThree20Network.a in Frameworks */,
+				320CC833B8AF0ACFD35E6225 /* libThree20Style.a in Frameworks */,
 				18AC4A34134AF74300953588 /* MessageUI.framework in Frameworks */,
 				18AC4A32134AF73800953588 /* QuartzCore.framework in Frameworks */,
 				18AC4A30134AF73000953588 /* CFNetwork.framework in Frameworks */,
@@ -629,6 +821,13 @@
 		180A673513483F1A00225E7E = {
 			isa = PBXGroup;
 			children = (
+				18AC4BE8134B57C400953588 /* Icon.png */,
+				18AC4BE4134B55A900953588 /* Default.png */,
+				18AC4BD9134B559F00953588 /* Icon48.png */,
+				18AC4BDA134B559F00953588 /* Icon57.png */,
+				18AC4BDB134B559F00953588 /* Icon72.png */,
+				18AC4BDC134B559F00953588 /* Icon114.png */,
+				18AC4BDD134B559F00953588 /* Icon512.png */,
 				18AC4BAD134B022500953588 /* Entitlements.plist */,
 				180A678213483F3100225E7E /* README */,
 				18AC4BA0134AFDE000953588 /* 3rdParty */,
@@ -642,7 +841,7 @@
 		180A674113483F1A00225E7E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				180A674013483F1A00225E7E /* pencilme.app */,
+				180A674013483F1A00225E7E /* advancedphotoeffects.app */,
 				180A676913483F1B00225E7E /* PhotoFXTests.octest */,
 			);
 			name = Products;
@@ -651,6 +850,14 @@
 		180A674313483F1A00225E7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3201088596B4756681693700 /* Three20UICommon.xcodeproj */,
+				320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */,
+				320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */,
+				320A2827FEC940B25BC42C60 /* Three20Core.xcodeproj */,
+				320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */,
+				320AF8492C47A4D819F7C450 /* QuartzCore.framework */,
+				320A5A189C235877202780D0 /* Three20Network.xcodeproj */,
+				320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */,
 				18AC4922134AEDB100953588 /* IM */,
 				18AC4A33134AF74200953588 /* MessageUI.framework */,
 				18AC4A31134AF73700953588 /* QuartzCore.framework */,
@@ -672,6 +879,7 @@
 			children = (
 				180A675313483F1A00225E7E /* PhotoFXAppDelegate.h */,
 				180A675413483F1A00225E7E /* PhotoFXAppDelegate.m */,
+				18AC4BCC134B28B400953588 /* New Group */,
 				180A675613483F1A00225E7E /* iPhone */,
 				180A675D13483F1B00225E7E /* iPad */,
 				180A674B13483F1A00225E7E /* Supporting Files */,
@@ -682,17 +890,11 @@
 		180A674B13483F1A00225E7E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				320B6C86F11D9990244A9730 /* Three20.bundle */,
 				18AC4B9F134AFDCD00953588 /* plist */,
 				18AC4B9E134AFDA900953588 /* Audio */,
 				18AC49F8134AF3DB00953588 /* XIB */,
 				18AC49F3134AF30A00953588 /* Images */,
-				18AC4BAF134B04DC00953588 /* Default.png */,
-				18AC4BB0134B04DD00953588 /* Icon114.png */,
-				18AC4BC1134B063100953588 /* Icon.png */,
-				18AC4BB1134B04DE00953588 /* Icon72.png */,
-				18AC4BB2134B04E100953588 /* Icon57.png */,
-				18AC4BB3134B04E400953588 /* Icon48.png */,
-				18AC4BB4134B04E900953588 /* Icon512.png */,
 				180A674C13483F1A00225E7E /* PhotoFX-Info.plist */,
 				180A674D13483F1A00225E7E /* InfoPlist.strings */,
 				180A675013483F1A00225E7E /* PhotoFX-Prefix.pch */,
@@ -704,10 +906,10 @@
 		180A675613483F1A00225E7E /* iPhone */ = {
 			isa = PBXGroup;
 			children = (
-				18AC4A0D134AF60500953588 /* Effect.h */,
-				18AC4A0E134AF60500953588 /* Effect.m */,
-				18AC4A0F134AF60600953588 /* EffectCatagory.h */,
-				18AC4A10134AF60600953588 /* EffectCatagory.m */,
+				18D36321135050DE0092102F /* LauncherViewTestController.h */,
+				18D36322135050DE0092102F /* LauncherViewTestController.m */,
+				18A43CB713517C3C00495B4B /* IM_TestViewController.h */,
+				18A43CB813517C3D00495B4B /* IM_TestViewController.m */,
 				18AC4A13134AF60800953588 /* EffectsTableViewController.h */,
 				18AC4A14134AF60900953588 /* EffectsTableViewController.m */,
 				18AC4A15134AF60A00953588 /* PhotoProcessViewController.h */,
@@ -716,6 +918,15 @@
 				18AC4A18134AF61000953588 /* PreviewViewController.m */,
 				180A675713483F1A00225E7E /* PhotoFXAppDelegate_iPhone.h */,
 				180A675813483F1A00225E7E /* PhotoFXAppDelegate_iPhone.m */,
+				18A43CB2135178E000495B4B /* TestIBView.h */,
+				18A43CB3135178E100495B4B /* TestIBView.m */,
+				18A43CB4135178E300495B4B /* TestIBView.xib */,
+				18A43CBA1351960800495B4B /* WelcomeViewController.h */,
+				18A43CBB1351960E00495B4B /* WelcomeViewController.m */,
+				18A43CBC1351961600495B4B /* WelcomeViewController.xib */,
+				186E668D135196C4000E03D3 /* SelectPhotoViewController.h */,
+				186E668E135196C4000E03D3 /* SelectPhotoViewController.m */,
+				186E668F135196C4000E03D3 /* SelectPhotoViewController.xib */,
 			);
 			name = iPhone;
 			sourceTree = "<group>";
@@ -958,7 +1169,8 @@
 		18AC49F3134AF30A00953588 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				18AC4B53134AFD6D00953588 /* background.png */,
+				18AC4BCF134B53A200953588 /* wood.png */,
+				18AC4BCD134B4BED00953588 /* background.png */,
 				18AC4B54134AFD6D00953588 /* frame2.png */,
 				18AC4B55134AFD6D00953588 /* frame1.png */,
 				18AC4B56134AFD6D00953588 /* icon_share.png */,
@@ -973,7 +1185,6 @@
 				18AC4B64134AFD6D00953588 /* sketch.png */,
 				18AC4B65134AFD6D00953588 /* shade.png */,
 				18AC4B66134AFD6D00953588 /* sepia.png */,
-				18AC4B67134AFD6D00953588 /* PE.png */,
 				18AC4B68134AFD6D00953588 /* oilpaint.png */,
 				18AC4B69134AFD6D00953588 /* negate.png */,
 				18AC4B6A134AFD6D00953588 /* implode.png */,
@@ -982,7 +1193,6 @@
 				18AC4B6D134AFD6D00953588 /* charcoal.png */,
 				18AC4B6E134AFD6D00953588 /* cat.png */,
 				18AC4B6F134AFD6D00953588 /* blur.png */,
-				18AC4B70134AFD6D00953588 /* background1.png */,
 				18AC4B71134AFD6D00953588 /* jobs.png */,
 				18AC49F4134AF31E00953588 /* iphone.tif */,
 				18AC49F5134AF31E00953588 /* iphone.png */,
@@ -1463,6 +1673,80 @@
 			name = 3rdParty;
 			sourceTree = "<group>";
 		};
+		18AC4BCC134B28B400953588 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+				18AC4A0D134AF60500953588 /* Effect.h */,
+				18AC4A0E134AF60500953588 /* Effect.m */,
+				18AC4A0F134AF60600953588 /* EffectCatagory.h */,
+				18AC4A10134AF60600953588 /* EffectCatagory.m */,
+			);
+			name = "New Group";
+			sourceTree = "<group>";
+		};
+		3201088596B4756681693703 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3201088596B4756681693704 /* libThree20UICommon.a */,
+				18D36335135050DF0092102F /* UICommonUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320A2827FEC940B25BC42C63 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320A2827FEC940B25BC42C64 /* libThree20Core.a */,
+				18D36329135050DF0092102F /* CoreUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320A5A189C235877202780D3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320A5A189C235877202780D4 /* libThree20Network.a */,
+				18D3632C135050DF0092102F /* NetworkUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320A737074758E53BA54BE93 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320A737074758E53BA54BE94 /* libThree20UINavigator.a */,
+				18D36338135050DF0092102F /* UINavigatorUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320CC833B8AF0ACFD35E6223 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320CC833B8AF0ACFD35E6224 /* libThree20Style.a */,
+				18D3632F135050DF0092102F /* StyleUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320D7DCCE32703ACAB9A45E3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320D7DCCE32703ACAB9A45E4 /* libThree20.a */,
+				18D36326135050DF0092102F /* Three20UnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		320F2C48872C2E2C4DF86203 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				320F2C48872C2E2C4DF86204 /* libThree20UI.a */,
+				18D36332135050DF0092102F /* UIUnitTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1477,10 +1761,17 @@
 			buildRules = (
 			);
 			dependencies = (
+				3201088596B4756681693701 /* PBXTargetDependency */,
+				320D7DCCE32703ACAB9A45E1 /* PBXTargetDependency */,
+				320A737074758E53BA54BE91 /* PBXTargetDependency */,
+				320A2827FEC940B25BC42C61 /* PBXTargetDependency */,
+				320F2C48872C2E2C4DF86201 /* PBXTargetDependency */,
+				320A5A189C235877202780D1 /* PBXTargetDependency */,
+				320CC833B8AF0ACFD35E6221 /* PBXTargetDependency */,
 			);
 			name = PhotoFX;
 			productName = PhotoFX;
-			productReference = 180A674013483F1A00225E7E /* pencilme.app */;
+			productReference = 180A674013483F1A00225E7E /* advancedphotoeffects.app */;
 			productType = "com.apple.product-type.application";
 		};
 		180A676813483F1B00225E7E /* PhotoFXTests */ = {
@@ -1518,6 +1809,36 @@
 			mainGroup = 180A673513483F1A00225E7E;
 			productRefGroup = 180A674113483F1A00225E7E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 320D7DCCE32703ACAB9A45E3 /* Products */;
+					ProjectRef = 320D7DCCE32703ACAB9A45E0 /* Three20.xcodeproj */;
+				},
+				{
+					ProductGroup = 320A2827FEC940B25BC42C63 /* Products */;
+					ProjectRef = 320A2827FEC940B25BC42C60 /* Three20Core.xcodeproj */;
+				},
+				{
+					ProductGroup = 320A5A189C235877202780D3 /* Products */;
+					ProjectRef = 320A5A189C235877202780D0 /* Three20Network.xcodeproj */;
+				},
+				{
+					ProductGroup = 320CC833B8AF0ACFD35E6223 /* Products */;
+					ProjectRef = 320CC833B8AF0ACFD35E6220 /* Three20Style.xcodeproj */;
+				},
+				{
+					ProductGroup = 320F2C48872C2E2C4DF86203 /* Products */;
+					ProjectRef = 320F2C48872C2E2C4DF86200 /* Three20UI.xcodeproj */;
+				},
+				{
+					ProductGroup = 3201088596B4756681693703 /* Products */;
+					ProjectRef = 3201088596B4756681693700 /* Three20UICommon.xcodeproj */;
+				},
+				{
+					ProductGroup = 320A737074758E53BA54BE93 /* Products */;
+					ProjectRef = 320A737074758E53BA54BE90 /* Three20UINavigator.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				180A673F13483F1A00225E7E /* PhotoFX */,
@@ -1526,11 +1847,113 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		18D36326135050DF0092102F /* Three20UnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Three20UnitTests.octest;
+			remoteRef = 18D36325135050DF0092102F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18D36329135050DF0092102F /* CoreUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = CoreUnitTests.octest;
+			remoteRef = 18D36328135050DF0092102F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18D3632C135050DF0092102F /* NetworkUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = NetworkUnitTests.octest;
+			remoteRef = 18D3632B135050DF0092102F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18D3632F135050DF0092102F /* StyleUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = StyleUnitTests.octest;
+			remoteRef = 18D3632E135050DF0092102F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18D36332135050DF0092102F /* UIUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UIUnitTests.octest;
+			remoteRef = 18D36331135050DF0092102F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18D36335135050DF0092102F /* UICommonUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UICommonUnitTests.octest;
+			remoteRef = 18D36334135050DF0092102F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		18D36338135050DF0092102F /* UINavigatorUnitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = UINavigatorUnitTests.octest;
+			remoteRef = 18D36337135050DF0092102F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3201088596B4756681693704 /* libThree20UICommon.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20UICommon.a;
+			remoteRef = 3201088596B4756681693706 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		320A2827FEC940B25BC42C64 /* libThree20Core.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20Core.a;
+			remoteRef = 320A2827FEC940B25BC42C66 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		320A5A189C235877202780D4 /* libThree20Network.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20Network.a;
+			remoteRef = 320A5A189C235877202780D6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		320A737074758E53BA54BE94 /* libThree20UINavigator.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20UINavigator.a;
+			remoteRef = 320A737074758E53BA54BE96 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		320CC833B8AF0ACFD35E6224 /* libThree20Style.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20Style.a;
+			remoteRef = 320CC833B8AF0ACFD35E6226 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		320D7DCCE32703ACAB9A45E4 /* libThree20.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20.a;
+			remoteRef = 320D7DCCE32703ACAB9A45E6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		320F2C48872C2E2C4DF86204 /* libThree20UI.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libThree20UI.a;
+			remoteRef = 320F2C48872C2E2C4DF86206 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		180A673E13483F1A00225E7E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				320B6C86F11D9990244A9731 /* Three20.bundle in Resources */,
 				180A674F13483F1A00225E7E /* InfoPlist.strings in Resources */,
 				180A675C13483F1B00225E7E /* MainWindow_iPhone.xib in Resources */,
 				180A676313483F1B00225E7E /* MainWindow_iPad.xib in Resources */,
@@ -1561,7 +1984,6 @@
 				18AC4B4F134AFD0C00953588 /* yellowslide.png in Resources */,
 				18AC4B50134AFD0C00953588 /* slider_ball.png in Resources */,
 				18AC4B51134AFD0C00953588 /* orangeslide.png in Resources */,
-				18AC4B73134AFD6D00953588 /* background.png in Resources */,
 				18AC4B74134AFD6D00953588 /* frame2.png in Resources */,
 				18AC4B75134AFD6D00953588 /* frame1.png in Resources */,
 				18AC4B76134AFD6D00953588 /* icon_share.png in Resources */,
@@ -1581,7 +2003,6 @@
 				18AC4B84134AFD6D00953588 /* sketch.png in Resources */,
 				18AC4B85134AFD6D00953588 /* shade.png in Resources */,
 				18AC4B86134AFD6D00953588 /* sepia.png in Resources */,
-				18AC4B87134AFD6D00953588 /* PE.png in Resources */,
 				18AC4B88134AFD6D00953588 /* oilpaint.png in Resources */,
 				18AC4B89134AFD6D00953588 /* negate.png in Resources */,
 				18AC4B8A134AFD6D00953588 /* implode.png in Resources */,
@@ -1590,17 +2011,21 @@
 				18AC4B8D134AFD6D00953588 /* charcoal.png in Resources */,
 				18AC4B8E134AFD6D00953588 /* cat.png in Resources */,
 				18AC4B8F134AFD6D00953588 /* blur.png in Resources */,
-				18AC4B90134AFD6D00953588 /* background1.png in Resources */,
 				18AC4B91134AFD6D00953588 /* jobs.png in Resources */,
 				18AC4B93134AFD8000953588 /* Tink.aiff in Resources */,
 				18AC4BAE134B022500953588 /* Entitlements.plist in Resources */,
-				18AC4BB5134B04EE00953588 /* Default.png in Resources */,
-				18AC4BB6134B04EE00953588 /* Icon114.png in Resources */,
-				18AC4BB7134B04EE00953588 /* Icon72.png in Resources */,
-				18AC4BB8134B04EE00953588 /* Icon57.png in Resources */,
-				18AC4BB9134B04EE00953588 /* Icon48.png in Resources */,
-				18AC4BBA134B04EE00953588 /* Icon512.png in Resources */,
-				18AC4BC2134B063300953588 /* Icon.png in Resources */,
+				18AC4BCE134B4BED00953588 /* background.png in Resources */,
+				18AC4BD0134B53A200953588 /* wood.png in Resources */,
+				18AC4BDE134B559F00953588 /* Icon48.png in Resources */,
+				18AC4BDF134B559F00953588 /* Icon57.png in Resources */,
+				18AC4BE0134B559F00953588 /* Icon72.png in Resources */,
+				18AC4BE1134B559F00953588 /* Icon114.png in Resources */,
+				18AC4BE2134B559F00953588 /* Icon512.png in Resources */,
+				18AC4BE5134B55A900953588 /* Default.png in Resources */,
+				18AC4BE9134B57C400953588 /* Icon.png in Resources */,
+				18A43CB6135178E500495B4B /* TestIBView.xib in Resources */,
+				18A43CBE1351962200495B4B /* WelcomeViewController.xib in Resources */,
+				186E6691135196C4000E03D3 /* SelectPhotoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1729,6 +2154,11 @@
 				18AC4B49134AFC5400953588 /* MyDebug.m in Sources */,
 				18AC4B4A134AFC5400953588 /* LabeledActivityIndicatorView.m in Sources */,
 				18AC4B4B134AFC5400953588 /* MyUIBox.m in Sources */,
+				18D36323135050DE0092102F /* LauncherViewTestController.m in Sources */,
+				18A43CB5135178E500495B4B /* TestIBView.m in Sources */,
+				18A43CB913517C3E00495B4B /* IM_TestViewController.m in Sources */,
+				18A43CBD1351962200495B4B /* WelcomeViewController.m in Sources */,
+				186E6690135196C4000E03D3 /* SelectPhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1747,6 +2177,41 @@
 			isa = PBXTargetDependency;
 			target = 180A673F13483F1A00225E7E /* PhotoFX */;
 			targetProxy = 180A676D13483F1B00225E7E /* PBXContainerItemProxy */;
+		};
+		3201088596B4756681693701 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20UICommon;
+			targetProxy = 3201088596B4756681693702 /* PBXContainerItemProxy */;
+		};
+		320A2827FEC940B25BC42C61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20Core;
+			targetProxy = 320A2827FEC940B25BC42C62 /* PBXContainerItemProxy */;
+		};
+		320A5A189C235877202780D1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20Network;
+			targetProxy = 320A5A189C235877202780D2 /* PBXContainerItemProxy */;
+		};
+		320A737074758E53BA54BE91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20UINavigator;
+			targetProxy = 320A737074758E53BA54BE92 /* PBXContainerItemProxy */;
+		};
+		320CC833B8AF0ACFD35E6221 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20Style;
+			targetProxy = 320CC833B8AF0ACFD35E6222 /* PBXContainerItemProxy */;
+		};
+		320D7DCCE32703ACAB9A45E1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20;
+			targetProxy = 320D7DCCE32703ACAB9A45E2 /* PBXContainerItemProxy */;
+		};
+		320F2C48872C2E2C4DF86201 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Three20UI;
+			targetProxy = 320F2C48872C2E2C4DF86202 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1807,12 +2272,18 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../../three20/Build/Products/three20,
+					"$(SRCROOT)/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/**";
 				OTHER_CFLAGS = "-Dmacintosh=1";
 				OTHER_CPLUSPLUSFLAGS = "-Dmacintosh=1";
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-lMagickCore",
 					"-lMagickWand",
 					"-lz",
@@ -1820,7 +2291,7 @@
 					"-ljpeg",
 					"-lpng",
 				);
-				PRODUCT_NAME = pencilme;
+				PRODUCT_NAME = advancedphotoeffects;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1835,12 +2306,18 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../../three20/Build/Products/three20,
+					"$(SRCROOT)/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/**";
 				OTHER_CFLAGS = "-Dmacintosh=1";
 				OTHER_CPLUSPLUSFLAGS = "-Dmacintosh=1";
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-lMagickCore",
 					"-lMagickWand",
 					"-lz",
@@ -1848,7 +2325,7 @@
 					"-ljpeg",
 					"-lpng",
 				);
-				PRODUCT_NAME = pencilme;
+				PRODUCT_NAME = advancedphotoeffects;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1867,7 +2344,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/IM\"",
 				);
-				PRODUCT_NAME = pencilme;
+				PRODUCT_NAME = advancedphotoeffects;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1884,7 +2361,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/IM\"",
 				);
-				PRODUCT_NAME = pencilme;
+				PRODUCT_NAME = advancedphotoeffects;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -1952,12 +2429,18 @@
 				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
+				HEADER_SEARCH_PATHS = (
+					"$(BUILT_PRODUCTS_DIR)/../three20",
+					"$(BUILT_PRODUCTS_DIR)/../../three20",
+					../../three20/Build/Products/three20,
+					"$(SRCROOT)/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 3.2;
 				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/**";
 				OTHER_CFLAGS = "-Dmacintosh=1";
 				OTHER_CPLUSPLUSFLAGS = "-Dmacintosh=1";
 				OTHER_LDFLAGS = (
+					"-ObjC",
 					"-lMagickCore",
 					"-lMagickWand",
 					"-lz",
@@ -1965,7 +2448,7 @@
 					"-ljpeg",
 					"-lpng",
 				);
-				PRODUCT_NAME = pencilme;
+				PRODUCT_NAME = advancedphotoeffects;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
@@ -1985,7 +2468,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/IM\"",
 				);
-				PRODUCT_NAME = pencilme;
+				PRODUCT_NAME = advancedphotoeffects;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};

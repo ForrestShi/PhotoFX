@@ -15,4 +15,8 @@
 
 + (UIImage *)scaleAndRotateImage:(UIImage *)image;
 
++ (void)saveImage:(UIImage*)image:(NSString*)imageName ;
++ (void)removeImage:(NSString*)fileName ;
++ (UIImage*)loadImage:(NSString*)imageName;
+
 @end

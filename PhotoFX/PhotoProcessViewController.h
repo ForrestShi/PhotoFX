@@ -3,6 +3,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "MagickWand.h"
 #import "LabeledActivityIndicatorView.h"
+#import "Three20/Three20.h"
 
 typedef	enum{
 	Sepia = 0 ,
@@ -21,12 +22,16 @@ typedef	enum{
 	Vignette,
 	Shade,
 	Flip,
-	UpgradePro = 300
+    AllInOne = 999,
+	UpgradePro = 1000
+    
 }EffectType;
 
 //com.dfa.pencilme
-static EffectType appType = Charcoal;
+//static EffectType appType = Charcoal;
 
+//com.dfa.advancedphotoeffects
+static EffectType appType = AllInOne;
 
 @protocol FlipbackDelegate
 
@@ -36,12 +41,13 @@ static EffectType appType = Charcoal;
 @end
 
 
-@interface PhotoProcessViewController : UIViewController <UIActionSheetDelegate, 
+@interface PhotoProcessViewController : TTViewController <UIActionSheetDelegate, 
                                                     UIScrollViewDelegate,
                                                     UIImagePickerControllerDelegate,
-                                                    UIPopoverControllerDelegate,
-                                                    UINavigationControllerDelegate,
-                                                    FlipbackDelegate> {
+                                               //     UIPopoverControllerDelegate,
+                        
+                                                    FlipbackDelegate> 
+{
 	UIImageView *_imageView;
 	UIScrollView *_scrollView;
 	UISlider* _slider1;

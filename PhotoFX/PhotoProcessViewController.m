@@ -23,6 +23,10 @@ static NSString* defaultFile = @"chinese-girl";
 #define SCALE 6
 #define PHOTO_WIDTH 32*SCALE
 #define PHOTO_HEIGHT 48*SCALE
+
+#define PHOTO_WIDTH_PAD 192
+#define PHOTO_HEIGHT_PAD 256
+
 #define PHOTO_REAL_WIDTH 32*4
 #define PHOTO_REAL_HEIGHT 48*4
 
@@ -70,22 +74,30 @@ CGImageRef createStandardImage(CGImageRef image) {
 @synthesize banner;
 @synthesize tapFlag;
 
+
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+        
+        
+    }
+    return self;
+}
+
 - (void)dealloc {
 	AudioServicesDisposeSystemSoundID(alertSoundID);
 	
-	if (_beforeImage) {
-		CGImageRelease(_beforeImage);
-		_beforeImage = nil;
-	}
-	
-	[_imageView release];
-	[_scrollView release];
-	[_activity  release];
-	[_slider1 release];
-	[_slider2 release];
-	[_toolbar release];
-	[_picker release];
-	[_popover release];
+    TT_RELEASE_CF_SAFELY(_beforeImage);
+    TT_RELEASE_SAFELY(_imageView);
+    TT_RELEASE_SAFELY(_scrollView);
+    TT_RELEASE_SAFELY(_activity);
+    TT_RELEASE_SAFELY(_slider1);
+    TT_RELEASE_SAFELY(_toolbar);
+    TT_RELEASE_SAFELY(_picker);
+    TT_RELEASE_SAFELY(_popover);
+
 	[super dealloc];
 }
 
@@ -99,7 +111,7 @@ CGImageRef createStandardImage(CGImageRef image) {
 {
 	currentType = newType;
 	needSlider1 = YES;
-	needSlider2 = NO;
+	needSlider2 = YES;
 }
 
 - (NSString*) effectName:(EffectType)effectType
@@ -284,7 +296,7 @@ CGImageRef createStandardImage(CGImageRef image) {
 
 
 
-// multithread version
+// multithread versionnavigationController
 
 - (void) doFiltering:(id)cgImage {
 	
@@ -413,6 +425,7 @@ CGImageRef createStandardImage(CGImageRef image) {
 	AudioServicesPlaySystemSound(alertSoundID);
 }
 
+
 #pragma mark -
 #pragma mark UIViewControllerDelegate
 
@@ -438,16 +451,24 @@ CGImageRef createStandardImage(CGImageRef image) {
 	
 	[self.view addSubview:self.scrollView];
 	[self.view addSubview:self.toolbar];
-	[self.view addSubview:self.slider1];
-    [self.view addSubview:self.slider2];
+    if (appType != AllInOne) {
+        [self.view addSubview:self.slider1];
+        [self.view addSubview:self.slider2];
+    }else if(appType == AllInOne){
+        CGRect fullRect = [UIScreen mainScreen].applicationFrame;
+		CGRect slider = CGRectMake(fullRect.size.width/10, fullRect.size.height*0.87, fullRect.size.width*0.8, 10);
+        self.slider1.frame = slider;
+        [self.view addSubview:self.slider1];
+    }
+    
 	
 	[self setCurrentType:appType];
 	
-	if (![MKStoreManager isFeaturePurchased:kIAPProUpgrade]) {
-		LogX();
-		[self.view addSubview:self.banner];
-		[self layoutForCurrentOrientation:NO];
-	}
+//	if (![MKStoreManager isFeaturePurchased:kIAPProUpgrade]) {
+//		LogX();
+//		[self.view addSubview:self.banner];
+//		[self layoutForCurrentOrientation:NO];
+//	}
 }
 
 - (void) tapAction
@@ -509,8 +530,8 @@ CGImageRef createStandardImage(CGImageRef image) {
 									   (fullRect.size.height - PHOTO_HEIGHT - 40)/2, PHOTO_WIDTH, PHOTO_HEIGHT);
 		
 		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad  ) {
-			photoFrame = CGRectMake((fullRect.size.width - PHOTO_WIDTH*2)/2, 
-									(fullRect.size.height - PHOTO_HEIGHT*2 - 60)/2, PHOTO_WIDTH*2, PHOTO_HEIGHT*2);
+			photoFrame = CGRectMake((fullRect.size.width - PHOTO_WIDTH_PAD*2)/2, 
+									(fullRect.size.height - PHOTO_HEIGHT_PAD*2 - 60)/2, PHOTO_WIDTH_PAD*2, PHOTO_HEIGHT_PAD*2);
 		}
 		
 		_scrollView = [[UIScrollView alloc] initWithFrame:photoFrame];
@@ -533,14 +554,14 @@ CGImageRef createStandardImage(CGImageRef image) {
 	}
 	return _scrollView;
 }
-- (ADBannerView*) banner
-{
-	if(banner == nil)
-    {
-        [self createADBannerView];
-    }
-	return banner;
-}
+//- (ADBannerView*) banner
+//{
+//	if(banner == nil)
+//    {
+//        [self createADBannerView];
+//    }
+//	return banner;
+//}
 - (UIToolbar*) toolbar 
 {
 	if (!_toolbar) {
@@ -561,15 +582,15 @@ CGImageRef createStandardImage(CGImageRef image) {
 																				    action:@selector(shareImage:)];
 		
 		UIBarButtonItem *spaceItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:NULL];
-		//_toolbar.items = [NSArray arrayWithObjects:loadItem, spaceItem,effectsPickr,spaceItem, shareItem, nil];
-		_toolbar.items = [NSArray arrayWithObjects:loadItem,spaceItem, shareItem, nil];
+		if (appType == AllInOne) {
+            _toolbar.items = [NSArray arrayWithObjects:loadItem, spaceItem,effectsPickr,spaceItem, shareItem, nil];
+
+        }else{
+            _toolbar.items = [NSArray arrayWithObjects:loadItem,spaceItem, shareItem, nil];
+        }
         
 		if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) {
 			_toolbar.frame = CGRectMake(0, CGRectGetMaxY(myBounds) - TOOLBAR_HEIGHT_PAD, fullRect.size.width,  TOOLBAR_HEIGHT_PAD);
-			//loadItem.title = @"Load Photo";
-//			effectsPickr.title = @"Pickup Effect";
-//			shareItem.title = @"Share Photo";
-			
 		}else {
 			_toolbar.frame = CGRectMake(0, CGRectGetMaxY(myBounds) - TOOLBAR_HEIGHT, fullRect.size.width,  TOOLBAR_HEIGHT);
 		}
@@ -789,7 +810,7 @@ CGImageRef createStandardImage(CGImageRef image) {
 
 - (void) returnback:(id)sender
 {
-	[self dismissModalViewControllerAnimated:YES];
+	// [self dismissModalViewControllerAnimated:YES];
 }
 
 - (void)upgradePro {
@@ -810,111 +831,3 @@ CGImageRef createStandardImage(CGImageRef image) {
 
 @end
 
-@implementation PhotoProcessViewController (ADBannerViewDelegate)
-
-
--(void)createADBannerView
-{
-    // --- WARNING ---
-    // If you are planning on creating banner views at runtime in order to support iOS targets that don't support the iAd framework
-    // then you will need to modify this method to do runtime checks for the symbols provided by the iAd framework
-    // and you will need to weaklink iAd.framework in your project's target settings.
-    // See the iPad Programming Guide, Creating a Universal Application for more information.
-    // http://developer.apple.com/iphone/library/documentation/general/conceptual/iPadProgrammingGuide/Introduction/Introduction.html
-    // --- WARNING ---
-	
-    // Depending on our orientation when this method is called, we set our initial content size.
-    // If you only support portrait or landscape orientations, then you can remove this check and
-    // select either ADBannerContentSizeIdentifierPortrait (if portrait only) or ADBannerContentSizeIdentifierLandscape (if landscape only).
-	NSString *contentSize;
-	if (&ADBannerContentSizeIdentifierPortrait != nil)
-	{
-		contentSize = UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? ADBannerContentSizeIdentifierPortrait : ADBannerContentSizeIdentifierLandscape;
-	}
-	else
-	{
-		// user the older sizes 
-		contentSize = UIInterfaceOrientationIsPortrait(self.interfaceOrientation) ? ADBannerContentSizeIdentifier320x50 : ADBannerContentSizeIdentifier480x32;
-    }
-	
-    // Calculate the intial location for the banner.
-    // We want this banner to be at the bottom of the view controller, but placed
-    // offscreen to ensure that the user won't see the banner until its ready.
-    // We'll be informed when we have an ad to show because -bannerViewDidLoadAd: will be called.
-    CGRect frame;
-    frame.size = [ADBannerView sizeFromBannerContentSizeIdentifier:contentSize];
-    frame.origin = CGPointMake(0.0f, CGRectGetMinY(self.view.bounds));
-	
-    // Now to create and configure the banner view
-    ADBannerView *bannerView = [[ADBannerView alloc] initWithFrame:frame];
-    // Set the delegate to self, so that we are notified of ad responses.
-    bannerView.delegate = self;
-    // Set the autoresizing mask so that the banner is pinned to the bottom
-    bannerView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleTopMargin;
-    // Since we support all orientations in this view controller, support portrait and landscape content sizes.
-    // If you only supported landscape or portrait, you could remove the other from this set.
-    
-	bannerView.requiredContentSizeIdentifiers = (&ADBannerContentSizeIdentifierPortrait != nil) ?
-	[NSSet setWithObjects:ADBannerContentSizeIdentifierPortrait, ADBannerContentSizeIdentifierLandscape, nil] : 
-	[NSSet setWithObjects:ADBannerContentSizeIdentifier320x50, ADBannerContentSizeIdentifier480x32, nil];
-	
-    // At this point the ad banner is now be visible and looking for an ad.
-    self.banner = bannerView;
-	[bannerView release];
-}
-
--(void)layoutForCurrentOrientation:(BOOL)animated
-{
-    CGFloat animationDuration = animated ? 0.2f : 0.0f;
-    // by default content consumes the entire view area
-    CGRect contentFrame = self.view.bounds;
-    // the banner still needs to be adjusted further, but this is a reasonable starting point
-    // the y value will need to be adjusted by the banner height to get the final position
-	CGPoint bannerOrigin = CGPointMake(CGRectGetMinX(contentFrame), CGRectGetMinY(contentFrame));
-    CGFloat bannerHeight = 0.0f;
-    
-    // First, setup the banner's content size and adjustment based on the current orientation
-    if(UIInterfaceOrientationIsLandscape(self.interfaceOrientation))
-		banner.currentContentSizeIdentifier = (&ADBannerContentSizeIdentifierLandscape != nil) ? ADBannerContentSizeIdentifierLandscape : ADBannerContentSizeIdentifier480x32;
-    else
-        banner.currentContentSizeIdentifier = (&ADBannerContentSizeIdentifierPortrait != nil) ? ADBannerContentSizeIdentifierPortrait : ADBannerContentSizeIdentifier320x50; 
-    bannerHeight = banner.bounds.size.height; 
-	
-    // Depending on if the banner has been loaded, we adjust the content frame and banner location
-    // to accomodate the ad being on or off screen.
-    if(banner.bannerLoaded)
-    {
-        contentFrame.size.height -= bannerHeight;
-		contentFrame.origin.y += bannerHeight;
-    }
-	UIView* view = self.imageView;
-    // And finally animate the changes, running layout for the content view if required.
-	[UIView animateWithDuration:animationDuration
-					 animations:^{
-						 view.frame = contentFrame;
-						 [view layoutIfNeeded];
-						 banner.frame = CGRectMake(bannerOrigin.x, bannerOrigin.y, banner.frame.size.width, banner.frame.size.height);
-					 }];
-}
-
-
--(void)bannerViewDidLoadAd:(ADBannerView *)banner
-{
-    [self layoutForCurrentOrientation:YES];
-}
-
--(void)bannerView:(ADBannerView *)banner didFailToReceiveAdWithError:(NSError *)error
-{
-    [self layoutForCurrentOrientation:YES];
-}
-
--(BOOL)bannerViewActionShouldBegin:(ADBannerView *)banner willLeaveApplication:(BOOL)willLeave
-{
-    return YES;
-}
-
--(void)bannerViewActionDidFinish:(ADBannerView *)banner
-{
-}
-
-@end

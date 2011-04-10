@@ -8,21 +8,156 @@
 
 #import "PhotoFXAppDelegate.h"
 #import "PhotoProcessViewController.h"
+#import "Three20/three20.h"
+#import "LauncherViewTestController.h"
+#import "TestIBView.h"
+#import "IM_TestViewController.h"
+#import "WelcomeViewController.h"
+#import "SelectPhotoViewController.h"
+
 
 @implementation PhotoFXAppDelegate
 
 
 @synthesize window=_window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
-    PhotoProcessViewController *viewController = [[PhotoProcessViewController alloc] init];
-    [self.window addSubview:viewController.view];
-    [self.window makeKeyAndVisible];
-    return YES;
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//    // Override point for customization after application launch.
+//    PhotoProcessViewController *viewController = [[PhotoProcessViewController alloc] init];
+//    [self.window addSubview:viewController.view];
+//    [self.window makeKeyAndVisible];
+//    return YES;
+//    return YES;
+//}
+
+//- (void)applicationDidFinishLaunching:(UIApplication*)application {
+//    TTNavigator* navigator = [TTNavigator navigator];
+//    navigator.supportsShakeToReload = YES;
+//    navigator.persistenceMode = TTNavigatorPersistenceModeNone;
+//    
+//    TTURLMap* map = navigator.URLMap;
+//    [map from:@"*" toViewController:[TTWebController class]];
+//    
+//    
+//    if (TTIsPad()) {
+////        [map                    from: @"tt://catalog"
+////              toSharedViewController: [SplitCatalogController class]];
+////        
+////        SplitCatalogController* controller =
+////        (SplitCatalogController*)[[TTNavigator navigator] viewControllerForURL:@"tt://catalog"];
+////        TTDASSERT([controller isKindOfClass:[SplitCatalogController class]]);
+////        map = controller.rightNavigator.URLMap;
+//        
+//    } else {
+//        [map                    from: @"tt://launch"
+//              toSharedViewController: [LauncherViewTestController class]];
+//    }
+//    
+//       
+////    [map            from: @"tt://photoEdit"
+////                  parent: @"tt://launch"
+////        toViewController: [PhotoProcessViewController class]
+////                selector: nil
+////              transition: 0];
+//   
+//    [map                    from: @"tt://photoEdit"
+//          toSharedViewController: [PhotoProcessViewController class]];
+//    
+//    [map                    from: @"tt://launch"
+//          toSharedViewController: [LauncherViewTestController class]];
+//    
+//    [map                    from:@"tt://testIB" 
+//          toSharedViewController:[TestIBView class]];    
+//    
+//    [map                    from:@"tt://selectPhoto" 
+//          toSharedViewController:[SelectPhotoViewController class]];   
+//    
+//    [map                    from:@"tt://testIM" 
+//          toSharedViewController:[IM_TestViewController class]];  
+//    
+//    [map                    from:@"tt://welcome" 
+//          toSharedViewController:[WelcomeViewController class]];  
+//    
+//    
+//    if (![navigator restoreViewControllers]) {
+//        [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://welcome"]];
+//    }
+//}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (void)applicationDidFinishLaunching:(UIApplication *)application {
+    TTNavigator* navigator = [TTNavigator navigator];
+    navigator.supportsShakeToReload = YES;
+    navigator.persistenceMode = TTNavigatorPersistenceModeAll;
+    navigator.window = self.window;
+    
+    // [TTStyleSheet setGlobalStyleSheet:[[[StyleSheet alloc] init] autorelease]];
+    
+    TTURLMap* map = navigator.URLMap;
+    [map from:@"*" toViewController:[TTWebController class]];
+    // [map from:@"tt://root" toViewController:NSClassFromString(@"RootViewController_iPhone")];
+    [map from:@"tt://nib/(loadFromNib:)" toSharedViewController:self];
+    [map from:@"tt://nib/(loadFromNib:)/(withClass:)" toSharedViewController:self];
+    [map from:@"tt://viewController/(loadFromVC:)" toSharedViewController:self];
+    [map from:@"tt://viewController/(loadFromVC:)/(withUIImage:)" toSharedViewController:self];
+    [map from:@"tt://modal/(loadFromNib:)" toModalViewController:self];
+    
+    if (![navigator restoreViewControllers]) {
+        [navigator openURLAction:[TTURLAction actionWithURLPath:@"tt://nib/WelcomeViewController"]];
+    }
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * Loads the given viewcontroller from the nib
+ */
+- (UIViewController*)loadFromNib:(NSString *)nibName withClass:className {
+    UIViewController* newController = [[NSClassFromString(className) alloc]
+                                       initWithNibName:nibName bundle:nil];
+    [newController autorelease];
+    
+    return newController;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * Loads the given viewcontroller from the the nib with the same name as the
+ * class
+ */
+- (UIViewController*)loadFromNib:(NSString*)className {
+    return [self loadFromNib:className withClass:className];
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+/**
+ * Loads the given viewcontroller by name
+ */
+- (UIViewController *)loadFromVC:(NSString *)className {
+    UIViewController * newController = [[ NSClassFromString(className) alloc] init];
+    [newController autorelease];
+    
+    return newController;
+}
+
+- (UIViewController *)loadFromVC:(NSString *)className withUIImage:(UIImage*)image{
+    UIViewController * newController = [[ NSClassFromString(className) alloc] initWithImage:image];
+    [newController autorelease];
+    
+    return newController;
+}
+
+
+///////////////////////////////////////////////////////////////////////////////////////////////////
+- (BOOL)application:(UIApplication*)application handleOpenURL:(NSURL*)URL {
+    [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:URL.absoluteString]];
     return YES;
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

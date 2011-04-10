@@ -25,4 +25,15 @@ Value: -Dmacintosh=1
 * Build & Release Testing
 
 
+April.9 
+* Import three20 
+* Do not use IB because of cross devices for iPhone/iPad support 
+* TODO  design for photo preview/final editting UI 
+
+April.10
+* New Design Idea 
+* TODO Launcher Item Image with selected image , but seem like impossible 
+* TODO TTPhoto load local image file ?
+
+
 

@@ -11,18 +11,18 @@
 #import "PhotoProcessViewController.h"
 
 @implementation PhotoFXAppDelegate_iPhone
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    [super application:application didFinishLaunchingWithOptions:launchOptions];
-   // IM_TestViewController  *testVC = [[IM_TestViewController alloc] init];
-   // [self.window addSubview:testVC.view];
-//    
-//    PhotoProcessViewController *viewController = [[PhotoProcessViewController alloc] init];
-//    [self.window addSubview:viewController.view];
-//    [self.window makeKeyAndVisible];
-//    return YES;
-}
+//
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+//{
+//    [super application:application didFinishLaunchingWithOptions:launchOptions];
+//   // IM_TestViewController  *testVC = [[IM_TestViewController alloc] init];
+//   // [self.window addSubview:testVC.view];
+////    
+////    PhotoProcessViewController *viewController = [[PhotoProcessViewController alloc] init];
+////    [self.window addSubview:viewController.view];
+////    [self.window makeKeyAndVisible];
+////    return YES;
+//}
 
 - (void)dealloc
 {

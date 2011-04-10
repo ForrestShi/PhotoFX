@@ -58,7 +58,7 @@ exit(-1); \
 	
 }
 
-CGImageRef createStandardImage(CGImageRef image) {
+CGImageRef createStandardCGImage(CGImageRef image) {
 	const size_t width = CGImageGetWidth(image);
 	const size_t height = CGImageGetHeight(image);
 	CGColorSpaceRef space = CGColorSpaceCreateDeviceRGB();
@@ -79,7 +79,7 @@ CGImageRef createStandardImage(CGImageRef image) {
 	// here we’ll be simple and always convert
 	const char *map = "ARGB"; // hard coded
 	const StorageType inputStorage = CharPixel;
-	CGImageRef standardized = createStandardImage(srcCGImage);
+	CGImageRef standardized = createStandardCGImage(srcCGImage);
 	NSData *srcData = (NSData *) CGDataProviderCopyData(CGImageGetDataProvider(standardized));
 	CGImageRelease(standardized);
 	const void *bytes = [srcData bytes];
@@ -129,7 +129,7 @@ CGImageRef createStandardImage(CGImageRef image) {
 - (void)posterizeImageWithNewMethod {
 	NSLog(@"we're using the new method");
 	
-	CGImageRef ref = createStandardImage(imageViewButton.imageView.image.CGImage);
+	CGImageRef ref = createStandardCGImage(imageViewButton.imageView.image.CGImage);
 	UIImage * image = [self createPosterizeImage:ref];
 	[imageViewButton setImage:image forState:UIControlStateNormal];
 	[image release];

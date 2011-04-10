@@ -11,7 +11,6 @@
 @protocol FlipbackDelegate;
 
 
-
 @interface EffectsTableViewController : UITableViewController <FlipbackDelegate> {
 	NSMutableArray	*_effectsArray;
 	NSArray	*_colorEffects;
