@@ -97,7 +97,7 @@
     
     TTURLMap* map = navigator.URLMap;
     [map from:@"*" toViewController:[TTWebController class]];
-    // [map from:@"tt://root" toViewController:NSClassFromString(@"RootViewController_iPhone")];
+    [map from:@"tt://launcher" toViewController:NSClassFromString(@"LauncherViewTestController")];
     [map from:@"tt://nib/(loadFromNib:)" toSharedViewController:self];
     [map from:@"tt://nib/(loadFromNib:)/(withClass:)" toSharedViewController:self];
     [map from:@"tt://viewController/(loadFromVC:)" toSharedViewController:self];

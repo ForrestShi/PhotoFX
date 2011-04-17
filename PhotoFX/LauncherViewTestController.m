@@ -11,9 +11,12 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
   if ((self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil])) {
     self.title = @"Launcher";
+      //self.originItemImage = [TTURLMap 
   }
   return self;
 }
+
+
 
 - (id)initWithImage:(UIImage*)image {
     if ((self = [super initWithNibName:nil  bundle:nil])) {
@@ -101,7 +104,7 @@
 // TTLauncherViewDelegate
 
 - (void)launcherView:(TTLauncherView*)launcher didSelectItem:(TTLauncherItem*)item {
-    [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:@"tt://photoEdit"]];
+    [[TTNavigator navigator] openURLAction:[TTURLAction actionWithURLPath:@"tt://viewController/IM_TestViewController"]];
 }
 
 - (void)launcherViewDidBeginEditing:(TTLauncherView*)launcher {

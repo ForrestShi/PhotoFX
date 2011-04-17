@@ -11,9 +11,11 @@
 
 @interface SelectPhotoViewController : TTViewController <UIImagePickerControllerDelegate> {
     IBOutlet UIButton   *selectedImageButton;
+    UIImage *_image;
 
 }
 @property (nonatomic,retain) IBOutlet UIButton   *selectedImageButton;
+@property (nonatomic,retain) UIImage *image;
 
 -(IBAction) photoFromAlbum: (id)sender;
 -(IBAction) startLauncerView: (id)sender;

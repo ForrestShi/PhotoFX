@@ -45,7 +45,7 @@
 					<object class="IBUIButton" id="1050144518">
 						<reference key="NSNextResponder" ref="774585933"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{14, 285}, {281, 53}}</string>
+						<string key="NSFrame">{{49, 45}, {222, 312}}</string>
 						<reference key="NSSuperview" ref="774585933"/>
 						<reference key="NSWindow"/>
 						<bool key="IBUIOpaque">NO</bool>
@@ -69,10 +69,6 @@
 						<object class="NSColor" key="IBUINormalTitleShadowColor">
 							<int key="NSColorSpace">3</int>
 							<bytes key="NSWhite">MC41AA</bytes>
-						</object>
-						<object class="NSCustomResource" key="IBUINormalImage">
-							<string key="NSClassName">NSImage</string>
-							<string key="NSResourceName">iphone.png</string>
 						</object>
 					</object>
 				</object>
@@ -236,10 +232,6 @@
 		</object>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
 		<int key="IBDocument.defaultPropertyAccessControl">3</int>
-		<object class="NSMutableDictionary" key="IBDocument.LastKnownImageSizes">
-			<string key="NS.key.0">iphone.png</string>
-			<string key="NS.object.0">{320, 460}</string>
-		</object>
 		<string key="IBCocoaTouchPluginVersion">301</string>
 	</data>
 </archive>

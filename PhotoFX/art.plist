@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>detail</key>
+		<string>oil painting effect</string>
+		<key>name</key>
+		<string>oilpaint</string>
+		<key>preview</key>
+		<string>oilpaint.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>simulates a charcoal drawing (LONG TIME)</string>
+		<key>name</key>
+		<string>charcoal</string>
+		<key>preview</key>
+		<string>charcoal.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>simulates a pencil sketch (LONG TIME)</string>
+		<key>name</key>
+		<string>sketch</string>
+		<key>preview</key>
+		<string>sketch.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>seem like people in the shower </string>
+		<key>name</key>
+		<string>spread</string>
+		<key>preview</key>
+		<string>spread.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>radial blur image effect</string>
+		<key>name</key>
+		<string>blur</string>
+		<key>preview</key>
+		<string>blur.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>emboss effect  (LONG TIME)</string>
+		<key>name</key>
+		<string>emboss</string>
+		<key>preview</key>
+		<string>emboss.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>softens the edges of the image in vignette style (LONG TIME)</string>
+		<key>name</key>
+		<string>vignette</string>
+		<key>preview</key>
+		<string>vignette.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>gray emboss effects</string>
+		<key>name</key>
+		<string>shade</string>
+		<key>preview</key>
+		<string>shade.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>flip image</string>
+		<key>name</key>
+		<string>flip</string>
+		<key>preview</key>
+		<string>flip.png</string>
+	</dict>
+</array>
+</plist>

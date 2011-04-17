@@ -8,10 +8,11 @@
 
 #import "SelectPhotoViewController.h"
 #import "MyImageKit.h"
+#import "ImageManager.h"
 
 @implementation SelectPhotoViewController
 @synthesize selectedImageButton;
-
+@synthesize image = _image;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -72,6 +73,10 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info{
     TTDPRINT(@"pick image from album");
     UIImage* selectedImage = [MyImageKit scaleAndRotateImage:[info	objectForKey:@"UIImagePickerControllerOriginalImage"]];
+   // self.image = selectedImage;
+    
+    ((ImageManager*)[ImageManager sharedManager]).image = selectedImage;
+    
 	NSLog(@"selectedImage %f %f ", selectedImage.size.width , selectedImage.size.height);
     [self performSelectorOnMainThread:@selector(setPreviewImage:) withObject:selectedImage waitUntilDone:YES];
 
@@ -93,6 +98,12 @@
 #pragma mark go to launcher view with selected UIImage 
 -(IBAction) startLauncerView: (id)sender{
     
+    TTDPRINT(@"%s",__PRETTY_FUNCTION__  );
+    TTURLAction *action = [TTURLAction actionWithURLPath:@"tt://viewController/LauncherViewTestController"];
+    //action.query = [NSDictionary dictionaryWithObject:self.image forKey:@"image"];
+    action.animated = YES;
+    
+    [[TTNavigator navigator] openURLAction:action];
     
 }
 @end

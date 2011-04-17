@@ -24,6 +24,7 @@
 		180A677713483F1B00225E7E /* PhotoFXTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 180A677613483F1B00225E7E /* PhotoFXTests.h */; };
 		180A677913483F1B00225E7E /* PhotoFXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 180A677813483F1B00225E7E /* PhotoFXTests.m */; };
 		180A678313483F3100225E7E /* README in Resources */ = {isa = PBXBuildFile; fileRef = 180A678213483F3100225E7E /* README */; };
+		18684595135AE05100D7F90B /* ImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 18684594135AE04E00D7F90B /* ImageManager.m */; };
 		186E6690135196C4000E03D3 /* SelectPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 186E668E135196C4000E03D3 /* SelectPhotoViewController.m */; };
 		186E6691135196C4000E03D3 /* SelectPhotoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186E668F135196C4000E03D3 /* SelectPhotoViewController.xib */; };
 		18A43CB5135178E500495B4B /* TestIBView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A43CB3135178E100495B4B /* TestIBView.m */; };
@@ -396,6 +397,8 @@
 		180A677613483F1B00225E7E /* PhotoFXTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoFXTests.h; sourceTree = "<group>"; };
 		180A677813483F1B00225E7E /* PhotoFXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoFXTests.m; sourceTree = "<group>"; };
 		180A678213483F3100225E7E /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		18684593135AE04D00D7F90B /* ImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageManager.h; sourceTree = "<group>"; };
+		18684594135AE04E00D7F90B /* ImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageManager.m; sourceTree = "<group>"; };
 		186E668D135196C4000E03D3 /* SelectPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectPhotoViewController.h; sourceTree = "<group>"; };
 		186E668E135196C4000E03D3 /* SelectPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectPhotoViewController.m; sourceTree = "<group>"; };
 		186E668F135196C4000E03D3 /* SelectPhotoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectPhotoViewController.xib; sourceTree = "<group>"; };
@@ -877,6 +880,8 @@
 		180A674A13483F1A00225E7E /* PhotoFX */ = {
 			isa = PBXGroup;
 			children = (
+				18684593135AE04D00D7F90B /* ImageManager.h */,
+				18684594135AE04E00D7F90B /* ImageManager.m */,
 				180A675313483F1A00225E7E /* PhotoFXAppDelegate.h */,
 				180A675413483F1A00225E7E /* PhotoFXAppDelegate.m */,
 				18AC4BCC134B28B400953588 /* New Group */,
@@ -2159,6 +2164,7 @@
 				18A43CB913517C3E00495B4B /* IM_TestViewController.m in Sources */,
 				18A43CBD1351962200495B4B /* WelcomeViewController.m in Sources */,
 				186E6690135196C4000E03D3 /* SelectPhotoViewController.m in Sources */,
+				18684595135AE05100D7F90B /* ImageManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

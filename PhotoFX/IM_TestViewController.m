@@ -7,6 +7,7 @@
 //
 
 #import "IM_TestViewController.h"
+#import "ImageManager.h"
 
 #define NUM_OF_ROUNDS 10
 #define DO_BENCHMARKS
@@ -52,10 +53,11 @@ exit(-1); \
 	// printout ImageMagick version
 	NSLog(@"%s", GetMagickVersion(nil));
 	
-#ifndef USE_PNG
-	[imageViewButton setImage:[UIImage imageNamed:@"iphone.tif"] forState:UIControlStateNormal];
-#endif
-	
+    imageViewButton.imageView.image = ((ImageManager*)[ImageManager sharedManager]).image;
+    if (imageViewButton.imageView.image) {
+        NSLog(@"not nill");
+    }
+
 }
 
 CGImageRef createStandardCGImage(CGImageRef image) {
@@ -141,7 +143,9 @@ CGImageRef createStandardCGImage(CGImageRef image) {
 	
 	MagickWandGenesis();
 	magick_wand = NewMagickWand();
-	NSData * dataObject = UIImagePNGRepresentation([UIImage imageNamed:@"iphone.png"]);//UIImageJPEGRepresentation([imageViewButton imageForState:UIControlStateNormal], 90);
+
+    
+	NSData * dataObject = UIImagePNGRepresentation(((ImageManager*)[ImageManager sharedManager]).image);//UIImageJPEGRepresentation([imageViewButton imageForState:UIControlStateNormal], 90);
 	MagickBooleanType status;
 	status = MagickReadImageBlob(magick_wand, [dataObject bytes], [dataObject length]);
 	if (status == MagickFalse) {

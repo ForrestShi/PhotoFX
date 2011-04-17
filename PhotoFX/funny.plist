@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>detail</key>
+		<string>swirl your face to make laugh</string>
+		<key>name</key>
+		<string>swirl</string>
+		<key>preview</key>
+		<string>swirl.png</string>
+	</dict>
+	<dict>
+		<key>detail</key>
+		<string>a lot fun by distorting photo, try some face center photo</string>
+		<key>name</key>
+		<string>implode</string>
+		<key>preview</key>
+		<string>implode.png</string>
+	</dict>
+</array>
+</plist>
